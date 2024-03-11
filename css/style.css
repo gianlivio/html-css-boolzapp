@@ -14,31 +14,37 @@ img {
 }
 
 .header-container,
-.chat-container,
 .footer-container {
-    padding: 20px;
+    height: 10vh;
 }
 
-.msg {
-    margin-bottom: 10px;
-    padding: 10px;
-
-    border-radius: 5px;
+.sidebar,
+.profile-section {
 }
 
-.chat-container {
-    background-image: url(../img/mine.jpg);
+.left-sidebar-part {
+    display: none;
 }
-
 
 /* UTILITIES */
 
-.header-container {
-    background-color: #eaeaea;
+.align-items {
+    align-items: center;
 }
 
 .flex {
     display: flex;
+}
+
+/* COLORS */
+.header-container {
+    background-color: #eaeaea;
+   
+}
+
+.chat-container {
+    background-image: url(../img/mine.jpg);
+    height: calc(100vh - 20vh);
 }
 
 .sent .msg {
@@ -64,16 +70,39 @@ img {
     color: #b6b9bb;
 }
 
+
+
 /* header */
 .friend-img img{
     height: 10vh;
-    border-radius: 50%;
-    margin-right: 20px; 
+    border-radius: 50%; 
+    padding: 10px;
 }
 /* MAIN */
-.chat-container {
-    height: 80vh;
+
+.chat-container .sent {
+    padding: 20px;
+    margin-left: 50px;
+    
 }
+
+.chat-container .received {
+   padding: 20px;
+    margin-right: 50px;
+}
+
+
+.msg {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.options-time {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 /* FOOTER */
 
 .message-input {
@@ -83,4 +112,39 @@ img {
     padding: 10px 20px;
     margin: 5px;
     font-size: 16px; 
+}
+
+
+/* Media Query tablet 768px */
+@media (min-width: 768px) {
+
+    .left-sidebar-part{
+        display: block;
+       
+    }
+    .profile-section  {
+        height: 10vh;
+        background-color: #eaeaea;
+        padding:10px;
+    ;
+
+    }
+
+    .profile-section img {
+        height: 10vh;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        padding:10px;
+    }
+
+    .chats li img {
+        height: 10vh;
+        width: 20vw;.
+    }
+
+   
+
 }

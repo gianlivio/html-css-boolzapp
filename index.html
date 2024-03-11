@@ -16,62 +16,94 @@
 
 </head>
 
-<body>
+<body class="flex">
 
-    <header>
-        <section>
-            <div class="header-container flex">
-                <div class="friend-img">
-                    <img src="./img/avatar_1.jpg" alt="">
-                </div>
-                <div class="name-last-access">
-                    <h3>Michele</h3>
-                    <p>Ultimo accesso oggi alle 16:26</p>
-                </div>
-            </div>
-        </section>
-    </header>
+    <section class="left-sidebar-part">
+        <!-- PROFILE SECTION -->
+        <div class="profile-section flex ">
+            <img src="./img/avatar_io.jpg" alt="">
+        </div>
+        <!-- /PROFILE-SECTION -->
 
-    <main>
-        <div class="chat-container">
-            <div class="sent">
-                <div class="msg">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum soluta placeat error perspiciatis
-                        sapiente voluptate, modi numquam aliquid eaque a, hic, assumenda inventore quasi culpa
-                        distinctio magni fuga nihil nulla?
-                    </p>
-                    <div class="options-time">
-                        <span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </span>
-                        <p>16:36</p>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <ul class="chats">
+                <li><img src="./img/avatar_3.jpg" alt=""></li>
+                <li><img src="./img/avatar_4.jpg" alt=""></li>
+                <li><img src="./img/avatar_5.jpg" alt=""></li>
+                <li><img src="./img/avatar_6.jpg" alt=""></li>
+                <li><img src="./img/avatar_7.jpg" alt=""></li>
+                <li><img src="./img/avatar_8.jpg" alt=""></li>
+                <li><img src="./img/avatar_7.jpg" alt=""></li>
+                <li><img src="./img/avatar_2.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- /SIDEBAR -->
+    </section>
+
+    <section class="right-chat.part">
+        <header>
+            <section>
+                <div class="header-container flex align-items">
+                    <div class="friend-img">
+                        <img src="./img/avatar_1.jpg" alt="">
+                    </div>
+                    <div class="name-last-access">
+                        <h3>Michele</h3>
+                        <p>Ultimo accesso oggi alle 16:26</p>
                     </div>
                 </div>
+            </section>
+        </header>
 
-            </div>
-            <div class="received">
-                <div class="msg">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum soluta placeat error perspiciatis
-                        sapiente voluptate, modi numquam aliquid eaque a, hic, assumenda inventore quasi culpa
-                        distinctio magni fuga nihil nulla?
-                    </p>
-                    <div class="options-time">
-                        <span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </span>
-                        <p>16:36</p>
+        <main>
+
+            <div class="chat-container">
+                <div class="sent">
+                    <div class="msg flex">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum soluta placeat error
+                            perspiciatis
+                            sapiente voluptate, modi numquam aliquid eaque a, hic, assumenda inventore quasi culpa
+                            distinctio magni fuga nihil nulla?
+                        </p>
+                        <div class="options-time flex">
+                            <span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <p>16:36</p>
+                        </div>
                     </div>
+
                 </div>
+                <div class="received">
+                    <div class="msg flex">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum soluta placeat error
+                            perspiciatis
+                            sapiente voluptate, modi numquam aliquid eaque a, hic, assumenda inventore quasi culpa
+                            distinctio magni fuga nihil nulla?
+                        </p>
+                        <div class="options-time flex">
+                            <span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <p>16:36</p>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <div class="footer-container">
-            <input type="text" placeholder="Scrivi un messaggio..." class="message-input">
-        </div>
-    </footer>
+
+
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <input type="text" placeholder="Scrivi un messaggio..." class="message-input">
+            </div>
+        </footer>
+    </section>
+
 
 </body>
 
