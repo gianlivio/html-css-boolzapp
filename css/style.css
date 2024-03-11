@@ -1,0 +1,86 @@
+/* mobile 1st approach */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+img {
+    max-width: 100%;
+}
+
+.header-container,
+.chat-container,
+.footer-container {
+    padding: 20px;
+}
+
+.msg {
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.chat-container {
+    background-image: url(../img/mine.jpg);
+}
+
+
+/* UTILITIES */
+
+.header-container {
+    background-color: #eaeaea;
+}
+
+.flex {
+    display: flex;
+}
+
+.sent .msg {
+    background-color: #d5f9ba;
+}
+
+.received .msg {
+    background-color: #ffffff;
+}
+
+.footer-container {
+    background-color: #eaeaea;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.options-time * {
+    color: #b6b9bb;
+}
+
+.header-container p {
+    color: #b6b9bb;
+}
+
+/* header */
+.friend-img img{
+    height: 10vh;
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+/* MAIN */
+.chat-container {
+    height: 80vh;
+}
+/* FOOTER */
+
+.message-input {
+    width: 80%;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px; 
+}
