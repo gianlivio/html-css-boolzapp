@@ -93,6 +93,12 @@ img {
     display: none;
 }
 
+.profile-section-icons {
+    display: none;
+    
+}
+
+
 /* MAIN */
 
 .chat-container .sent {
@@ -117,7 +123,7 @@ img {
     justify-content: space-between;
 }
 
-.chats li div{
+.chats li div {
     display: none;
 }
 
@@ -156,6 +162,8 @@ img {
 /* Media Query tablet 768px */
 @media (min-width: 768px) {
 
+    
+
     .header-container-options {
         display: block;
         display: flex;
@@ -172,7 +180,7 @@ img {
 
     .left-sidebar-part {
         display: block;
-        width: 50%;
+        width: 30%;
 
     }
 
@@ -180,14 +188,14 @@ img {
         height: 10vh;
         background-color: #eaeaea;
         padding: 10px;
-        ;
+
 
     }
 
     .profile-section img {
         height: 10vh;
         border-radius: 50%;
-        padding: 10px;
+       
     }
 
     .sidebar {
@@ -196,16 +204,13 @@ img {
     }
 
     .chats li img {
-        height: 10vh;
-        width: 10vw;
-    }
-
-    .sidebar .chats li img {
-
-        height: 10vh;
         border-radius: 50%;
         padding: 10px;
+
     }
+
+
+
 
     .footer-container {
         display: flex;
@@ -215,9 +220,7 @@ img {
 
 
     .footer-container i {
-
         display: block;
-
     }
 
     .msg {
@@ -231,17 +234,22 @@ img {
 
 @media screen and (min-width: 992px) {
 
-/* mostrare le nuove sezioni  */
+    /* mostrare le nuove sezioni  */
     .notifications,
-    .search-chat {
+    .search-chat-section {
         display: block;
+    }
+
+    .profile-section-icons {
+        display: block;
+        
     }
 
     /* sezione notifiche */
     .notifications {
         gap: 10px;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         align-items: center;
         background-color: #8edafc;
@@ -261,26 +269,58 @@ img {
     .search-chat-section {
         gap: 10px;
         width: 100%;
-        
         display: flex;
         align-items: center;
         background-color: white;
         margin: 10px 20px;
-       
+
     }
-        /* icona ricerca */
 
- /* sezione chats */
-
- .chats li {
-    display: flex;
-    align-items: flex-start;
     
- }
 
- .chats li div, p {
-    display: block;
-    padding: 10px;
-}
-    
+    /* sezione chats */
+
+    .chats li {
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid lightgray;
+
+
+    }
+
+    .chats li div {
+        display: block;
+        margin-top: 10px;
+        padding-right: 10px;
+        font-size: small;
+    }
+
+    .chats li div p {
+        color: lightgray;
+    }
+
+    .chats li img {
+        width: 30%;
+    }
+
+    /* sidebar scroll chat*/
+    .sidebar {
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+
+    /* sidebar scroll chatt */
+    .chat-container {
+        height: calc(100vh - 160px);
+        overflow-y: auto; 
+    }
+
+    .profile-section {
+        justify-content: space-between;
+    }
+
+    .profile-section-icons a i {
+        color: #b1b1b2;
+        padding: 5px;
+    }
 }
